@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  contactUrl: "https://calendly.com/dr-jarkkomoilanen/new-meeting",
+  contactUrl: "https://calendly.com/dr-jarkkomoilanen/data-products-with-purpose-clone",
   demoIframeUrl: "",
   standardsUrl: "https://opendataproducts.org"
 };

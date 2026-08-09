@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  contactUrl: "https://calendly.com/dr-jarkkomoilanen/data-products-with-purpose-clone",
+  contactUrl: "https://calendly.com/dr-jarkkomoilanen/maysano-studio-next-steps",
   demoIframeUrl: "",
   standardsUrl: "https://opendataproducts.org"
 };

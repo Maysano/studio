@@ -221,6 +221,12 @@ button:focus-visible {
   padding: 54px 0 68px;
 }
 
+.hero {
+  background: var(--green-dark);
+  color: var(--white);
+  border-bottom-color: var(--green-dark);
+}
+
 .section-soft {
   background: var(--background-secondary);
 }
@@ -252,7 +258,8 @@ button:focus-visible {
 }
 
 .section-dark .eyebrow,
-.final-cta .eyebrow {
+.final-cta .eyebrow,
+.hero .eyebrow {
   color: #d9e5cb;
 }
 
@@ -290,8 +297,31 @@ p {
 }
 
 .section-dark p,
-.final-cta p {
+.final-cta p,
+.hero p {
   color: rgba(255, 255, 255, 0.78);
+}
+
+.hero .button-primary {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--green-dark);
+}
+
+.hero .button-primary:hover {
+  background: var(--background-soft);
+  border-color: var(--background-soft);
+  color: var(--green-dark);
+}
+
+.hero .button-secondary {
+  border-color: rgba(255, 255, 255, 0.74);
+  color: var(--white);
+}
+
+.hero .button-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--white);
 }
 
 .lede {
@@ -318,7 +348,7 @@ p {
 .hero__media {
   margin: 0;
   background: var(--white);
-  border: 1px solid var(--border-strong);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: 4px;
   overflow: hidden;
 }

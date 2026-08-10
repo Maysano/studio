@@ -454,6 +454,10 @@ p {
   line-height: 1.08;
 }
 
+.time-saved__actions {
+  margin-top: 20px;
+}
+
 .time-saved__copy p:last-child,
 .time-saved__note {
   margin-bottom: 0;
@@ -588,7 +592,7 @@ p {
 .video-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 19 / 10;
   background: #131711;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 4px;

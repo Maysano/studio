@@ -31,6 +31,11 @@ html {
   *::after {
     transition-duration: 0.01ms !important;
   }
+
+  .hero {
+    animation: none !important;
+    background-position: 50% 50%;
+  }
 }
 
 body {
@@ -222,9 +227,29 @@ button:focus-visible {
 }
 
 .hero {
-  background: var(--green-dark);
+  background:
+    linear-gradient(
+      90deg,
+      #1E241C 0%,
+      #24301F 24%,
+      #1A2118 50%,
+      #263722 76%,
+      #1E241C 100%
+    );
+  background-size: 260% 100%;
+  animation: hero-gradient-drift 22s linear infinite;
   color: var(--white);
   border-bottom-color: var(--green-dark);
+}
+
+@keyframes hero-gradient-drift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 260% 50%;
+  }
 }
 
 .section-soft {

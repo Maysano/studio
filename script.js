@@ -1,6 +1,6 @@
 const SITE_CONFIG = {
   contactUrl: "https://calendly.com/dr-jarkkomoilanen/maysano-studio-next-steps",
-  demoIframeUrl: "https://www.youtube.com/embed/AsQlil2uLvw",
+  demoIframeUrl: "https://www.youtube.com/embed/AsQlil2uLvw?enablejsapi=1&origin=https%3A%2F%2Fstudio.maysano.com",
   standardsUrl: "https://opendataproducts.org"
 };
 

@@ -17,7 +17,7 @@ Then visit `http://localhost:8080`.
 The Demo section uses a YouTube embed in `index.html`:
 
 ```text
-https://www.youtube.com/embed/AsQlil2uLvw
+https://www.youtube.com/embed/AsQlil2uLvw?enablejsapi=1&origin=https%3A%2F%2Fstudio.maysano.com
 ```
 
 To replace it, update the iframe `src` in `index.html` and `demoIframeUrl` near the top of `script.js`.
@@ -39,7 +39,7 @@ Edit the configuration block near the top of `script.js`:
 ```js
 const SITE_CONFIG = {
   contactUrl: "#contact",
-  demoIframeUrl: "https://www.youtube.com/embed/AsQlil2uLvw",
+  demoIframeUrl: "https://www.youtube.com/embed/AsQlil2uLvw?enablejsapi=1&origin=https%3A%2F%2Fstudio.maysano.com",
   standardsUrl: "https://opendataproducts.org"
 };
 ```

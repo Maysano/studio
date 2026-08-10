@@ -8,7 +8,7 @@
   --text-secondary: #4A5047;
   --border: #CDD2C8;
   --border-strong: #9CA69A;
-  --accent-muted: #5C6D51;
+  --accent: #2458A6;
   --focus: #1F5F9A;
   --max-width: 1220px;
 }
@@ -275,7 +275,7 @@ button:focus-visible {
 
 .eyebrow {
   margin: 0 0 13px;
-  color: var(--accent-muted);
+  color: var(--accent);
   font-size: 11px;
   font-weight: 760;
   line-height: 1.2;
@@ -308,6 +308,15 @@ h2 {
   font-size: clamp(30px, 3vw, 42px);
   line-height: 1.08;
   font-weight: 660;
+}
+
+.section h2 {
+  color: var(--accent);
+}
+
+.section-dark h2,
+.final-cta h2 {
+  color: var(--white);
 }
 
 h3 {
@@ -407,7 +416,7 @@ p {
 
 .row-number,
 .steps span {
-  color: var(--accent-muted);
+  color: var(--accent);
   font-size: 34px;
   line-height: 0.95;
   font-weight: 680;
@@ -431,6 +440,7 @@ p {
 
 .time-saved__copy h2 {
   margin-bottom: 0;
+  color: var(--accent);
   font-size: clamp(46px, 6vw, 68px);
   line-height: 0.95;
   font-weight: 720;
@@ -467,7 +477,7 @@ p {
 .time-saved__metric strong {
   display: block;
   margin-bottom: 5px;
-  color: var(--text-primary);
+  color: var(--accent);
   font-size: clamp(30px, 3.2vw, 38px);
   line-height: 1;
 }
@@ -480,7 +490,7 @@ p {
 }
 
 .time-saved__arrow {
-  color: var(--border-strong);
+  color: var(--accent);
   font-size: 28px;
   line-height: 1;
   text-align: center;
@@ -537,9 +547,10 @@ p {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: var(--background-soft);
+  background: var(--white);
+  border: 1px solid var(--accent);
   border-radius: 50%;
-  color: var(--green-primary);
+  color: var(--accent);
   font-size: 13px;
   font-weight: 760;
   line-height: 1;
@@ -685,7 +696,7 @@ p {
 .process-flow span:not(:last-of-type)::after {
   content: "\2192";
   flex: 0 0 auto;
-  color: var(--green-primary);
+  color: var(--accent);
   font-size: 20px;
   font-weight: 430;
   line-height: 1;
@@ -703,19 +714,19 @@ p {
 
 .process-flow b::before {
   content: "Return path: ";
-  color: var(--green-primary);
+  color: var(--accent);
 }
 
 .text-link {
   display: inline-block;
-  color: var(--green-primary);
+  color: var(--accent);
   font-weight: 670;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
 .text-link:hover {
-  color: var(--green-dark);
+  color: var(--text-primary);
 }
 
 .standards-table {
@@ -733,7 +744,7 @@ p {
 }
 
 .standards-table dt {
-  color: var(--green-dark);
+  color: var(--accent);
   font-size: 28px;
   line-height: 1;
   font-weight: 720;
@@ -774,12 +785,12 @@ p {
 }
 
 .price-panel--featured {
-  border: 2px solid var(--green-primary);
+  border: 2px solid var(--accent);
 }
 
 .plan-label {
   margin-bottom: 13px;
-  color: var(--green-primary);
+  color: var(--accent);
   font-size: 11px;
   font-weight: 780;
 }
@@ -824,6 +835,27 @@ p {
 
 .price-panel .button {
   margin-top: auto;
+}
+
+.price-panel .button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.price-panel .button-primary:hover {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.price-panel .button-secondary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.price-panel .button-secondary:hover {
+  background: var(--background-secondary);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .final-cta {

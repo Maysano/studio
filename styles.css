@@ -403,7 +403,7 @@ p {
   gap: 46px;
   align-items: center;
   padding: 30px 36px 32px;
-  background: var(--white);
+  background: var(--background-secondary);
   border: 1px solid var(--border-strong);
   border-radius: 4px;
 }
@@ -438,7 +438,7 @@ p {
 .time-saved__metric {
   min-height: 112px;
   padding: 24px 28px;
-  background: var(--background-secondary);
+  background: var(--white);
   border: 1px solid var(--border-strong);
   border-radius: 4px;
 }

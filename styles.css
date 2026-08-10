@@ -347,10 +347,6 @@ p {
 
 .hero__media {
   margin: 0;
-  background: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.42);
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .hero__media img {

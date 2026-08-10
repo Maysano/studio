@@ -20,9 +20,12 @@ if (SITE_CONFIG.demoIframeUrl) {
   const iframe = document.querySelector("[data-demo-iframe]");
   const video = document.querySelector("[data-video-shell] video");
 
-  if (iframe && video) {
+  if (iframe) {
     iframe.src = SITE_CONFIG.demoIframeUrl;
     iframe.hidden = false;
+  }
+
+  if (video) {
     video.hidden = true;
   }
 }

@@ -14,13 +14,13 @@ Then visit `http://localhost:8080`.
 
 ## Replace The Demo Video
 
-Add the recorded demo as:
+The Demo section uses a YouTube embed in `index.html`:
 
 ```text
-assets/portfolio-studio-demo.mp4
+https://www.youtube.com/embed/AsQlil2uLvw
 ```
 
-The video element in `index.html` already points to that file. To use an embedded video instead, set `demoIframeUrl` near the top of `script.js`.
+To replace it, update the iframe `src` in `index.html` and `demoIframeUrl` near the top of `script.js`.
 
 ## Replace The Hero Screenshot
 
@@ -39,7 +39,7 @@ Edit the configuration block near the top of `script.js`:
 ```js
 const SITE_CONFIG = {
   contactUrl: "#contact",
-  demoIframeUrl: "",
+  demoIframeUrl: "https://www.youtube.com/embed/AsQlil2uLvw",
   standardsUrl: "https://opendataproducts.org"
 };
 ```

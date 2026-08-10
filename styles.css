@@ -603,6 +603,10 @@ p {
   object-fit: cover;
 }
 
+.video-frame [hidden] {
+  display: none;
+}
+
 .video-frame video:not([src]) {
   background: #131711;
 }

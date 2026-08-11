@@ -745,17 +745,32 @@ p {
 .standards-table div,
 .enterprise-list article {
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
   gap: 24px;
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
 }
 
+.standards-table div {
+  grid-template-columns: 210px minmax(0, 1fr);
+}
+
+.enterprise-list article {
+  grid-template-columns: 110px minmax(0, 1fr);
+}
+
 .standards-table dt {
+  display: flex;
+  align-items: center;
   color: var(--accent);
   font-size: 28px;
   line-height: 1;
   font-weight: 720;
+}
+
+.standards-table dt img {
+  display: block;
+  width: min(100%, 190px);
+  height: auto;
 }
 
 .standards-table dd {

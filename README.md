@@ -44,7 +44,7 @@ const SITE_CONFIG = {
 };
 ```
 
-`contactUrl` controls "Book a discussion", "Select plan" and "Contact sales" links.
+`contactUrl` controls the "Book kickoff" links.
 
 ## Edit Pricing
 

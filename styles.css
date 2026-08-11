@@ -769,8 +769,14 @@ p {
 
 .standards-table dt img {
   display: block;
-  width: min(100%, 190px);
-  height: auto;
+  width: 190px;
+  height: 82px;
+  object-fit: fill;
+}
+
+.standards-table dt img.standards-logo--odpc {
+  transform: scale(1.08);
+  transform-origin: left center;
 }
 
 .standards-table dd {

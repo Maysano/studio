@@ -842,8 +842,13 @@ p {
   object-fit: fill;
 }
 
+.standards-table dt img.standards-logo--odps {
+  transform: scale(1.04);
+  transform-origin: left center;
+}
+
 .standards-table dt img.standards-logo--odpc {
-  transform: scale(1.08);
+  transform: scale(0.98);
   transform-origin: left center;
 }
 

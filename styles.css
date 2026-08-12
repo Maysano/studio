@@ -766,6 +766,41 @@ p {
   align-items: start;
 }
 
+.story-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  gap: clamp(48px, 6vw, 88px);
+  align-items: center;
+}
+
+.story-row--reverse {
+  grid-template-columns: minmax(420px, 1.08fr) minmax(0, 0.92fr);
+}
+
+.story-visual {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.story-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 22px 60px rgba(16, 24, 40, 0.1);
+}
+
+.story-visual--portrait img {
+  width: min(100%, 540px);
+}
+
+.story-visual--wide {
+  margin-right: calc((min(100vw - 48px, var(--max-width)) - 100%) * -0.04);
+}
+
 .relationship {
   display: grid;
   margin: 0;
@@ -1151,14 +1186,26 @@ p {
 
   .hero__grid,
   .two-column,
+  .story-row,
+  .story-row--reverse,
   .cost-proof,
   .final-cta__inner {
     grid-template-columns: 1fr;
   }
 
   .hero__grid,
-  .two-column {
+  .two-column,
+  .story-row,
+  .story-row--reverse {
     gap: 42px;
+  }
+
+  .story-row--reverse .story-visual {
+    order: 2;
+  }
+
+  .story-visual--wide {
+    margin-right: 0;
   }
 
   .pricing-grid {

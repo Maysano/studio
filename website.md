@@ -483,9 +483,9 @@ Business and technical governance
 
 Keep decision context, data products and delivery information connected.
 
-Configurable AI runtime
+Integrated AI gateway
 
-Support controlled model providers, policies, guardrails and workload-level configuration.
+Studio includes an AI gateway layer for controlled model access, workload routing, guardrails, policies, budgeting and provider governance.
 
 Enterprise integration
 

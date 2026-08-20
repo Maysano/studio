@@ -772,6 +772,23 @@ p {
   overflow: hidden;
 }
 
+.capability-video-card--link {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.capability-video-card--link:hover {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(196, 224, 151, 0.65);
+  transform: translateY(-2px);
+}
+
+.capability-video-card--link:focus-visible {
+  outline: 3px solid rgba(196, 224, 151, 0.85);
+  outline-offset: 4px;
+}
+
 .capability-video-card__preview {
   display: grid;
   place-items: center;
@@ -783,6 +800,13 @@ p {
   font-size: 13px;
   font-weight: 650;
   letter-spacing: 0.04em;
+}
+
+.capability-video-card__preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .capability-video-card__content {
@@ -802,15 +826,18 @@ p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.capability-video-card__content a {
+.capability-video-card__content a,
+.capability-video-card__action {
   margin-top: auto;
   color: var(--white);
   font-size: 14px;
   font-weight: 680;
+  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.capability-video-card__content a:hover {
+.capability-video-card__content a:hover,
+.capability-video-card--link:hover .capability-video-card__action {
   text-decoration-thickness: 2px;
 }
 
